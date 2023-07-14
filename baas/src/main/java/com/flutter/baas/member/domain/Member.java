@@ -1,3 +1,4 @@
+/*
 package com.flutter.baas.member.domain;
 
 
@@ -44,3 +45,4 @@ public class Member {
 
 
 }
+*/
