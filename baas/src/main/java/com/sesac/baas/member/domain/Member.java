@@ -1,6 +1,7 @@
 package com.sesac.baas.member.domain;
 
 
+import com.sesac.baas.apikey.domain.ApiKey;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -22,4 +23,8 @@ public class Member {
     @ManyToOne  // 이 필드는 N:1 관계를 나타냅니다.
     @JoinColumn(name = "tenant_id", nullable = false)  // 이 필드는 외래 키로 사용되며, 'tenant_id' 컬럼을 나타냅니다. null을 허용하지 않습니다.
     private Tenant tenant;
+
+
+    @ManyToOne
+    private ApiKey apiKey;
 }
