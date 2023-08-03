@@ -1,7 +1,7 @@
 package com.sesac.baas.member.domain;
 
 
-import com.sesac.baas.apikey.domain.ApiKey;
+//import com.sesac.baas.apikey.domain.ApiKey;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -25,6 +25,4 @@ public class Member {
     private Tenant tenant;
 
 
-    @ManyToOne
-    private ApiKey apiKey;
 }
